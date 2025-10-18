@@ -184,32 +184,122 @@
             </section>
 
         <section id="services" class="container" style="background-color: #2b2b2b;">
-            <h1>Послуги та Ціни</h1>
-            <div class="pricing-grid">
-                <div class="pricing-card">
-                    <h3>Пакет "ПРОДАЖ"</h3>
-                    <p>Прості статичні знімки для швидкого продажу авто.</p>
-                    <div class="price">від 250 грн</div>
-                    <ul><li>10-15 оброблених фото</li><li>Зйомка на одній локації</li><li>Термін виконання: 2 дні</li></ul>
-                    
-                </div>
+            <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Послуги та Ціни (Таблиця)</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #333; /* Фон, схожий на зображення */
+            color: #fff; /* Білий текст */
+            margin: 0;
+            padding: 20px;
+        }
 
-                <div class="pricing-card">
-                    <h3>Пакет "ПОРТФОЛІО"</h3>
-                    <p>Художня зйомка на локації для вашого особистого архіву чи соцмереж.</p>
-                    <div class="price">від 400 грн</div>
-                    <ul><li>20-30 художньо оброблених фото</li><li>Зйомка на 1-2 локаціях</li><li>Допомога у виборі локації</li></ul>
-                    
-                </div>
+        h1 {
+            text-align: center;
+            margin-bottom: 30px;
+            font-size: 2em;
+        }
 
-                <div class="pricing-card">
-                    <h3>Пакет "КОМЕРЦІЯ"</h3>
-                    <p>Зйомка для автосалонів, брендів та рекламних кампаній.</p>
-                    <div class="price">Індивідуально</div>
-                    <ul><li>Повний спектр послуг</li><li>Професійна ретуш</li><li>Усі умови обговорюються</li></ul>
-                    
-                </div>
-            </div>
+        table {
+            width: 80%; /* Ширина таблиці */
+            margin: 0 auto; /* Центрування таблиці */
+            border-collapse: collapse; /* Прибираємо подвійні лінії */
+            text-align: center;
+            background-color: #444; /* Фон для таблиці */
+        }
+
+        th, td {
+            padding: 15px;
+            border: 1px solid #555; /* Світліша лінія для таблиці */
+        }
+
+        /* Стилі для заголовків стовпців */
+        th {
+            background-color: #222;
+            font-size: 1.2em;
+            color: #ff9900; /* Можна додати акцентний колір */
+            text-transform: uppercase;
+        }
+
+        /* Стилі для рядка з ціною */
+        tr:nth-child(3) td {
+            font-size: 1.5em;
+            font-weight: bold;
+            color: #00ff00; /* Акцентний колір для ціни */
+        }
+
+        /* Стилі для першого стовпця (описів) */
+        td:first-child {
+            text-align: left;
+            font-weight: bold;
+            background-color: #383838;
+        }
+
+        /* Стиль для індивідуальної ціни */
+        .individual-price {
+            font-size: 1.5em;
+            font-weight: bold;
+        }
+
+        /* Стиль для короткого опису пакетів */
+        tr:nth-child(2) td {
+            font-style: italic;
+            font-size: 0.9em;
+        }
+
+    </style>
+</head>
+<body>
+
+    <h1>Послуги та Ціни</h1>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Опис</th>
+                <th>Пакет "ПРОДАЖ"</th>
+                <th>Пакет "ПОРТФОЛІО"</th>
+                <th>Пакет "КОМЕРЦІЯ"</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Короткий опис</td>
+                <td>Прості статичні знімки для швидкого продажу авто.</td>
+                <td>Художня зйомка на локації для вашого особистого архіву чи соцмереж.</td>
+                <td>Зйомка для автосалонів, брендів та рекламних кампаній.</td>
+            </tr>
+            <tr>
+                <td>**Ціна**</td>
+                <td>**від 250 грн**</td>
+                <td>**від 400 грн**</td>
+                <td class="individual-price">**Індивідуально**</td>
+            </tr>
+            <tr>
+                <td>Кількість оброблених фото</td>
+                <td>10-15 оброблених фото</td>
+                <td>20-30 художньо оброблених фото</td>
+                <td>Професійна ретуш</td>
+            </tr>
+            <tr>
+                <td>Кількість локацій</td>
+                <td>Зйомка на одній локації</td>
+                <td>Зйомка на 1-2 локаціях</td>
+                <td>Повний спектр послуг</td>
+            </tr>
+             <tr>
+                <td>Додаткові умови</td>
+                <td>Термін виконання: 2 дні</td>
+                <td>Допомога у виборі локації</td>
+                <td>Усі умови обговорюються</td>
+            </tr>
+        </tbody>
+    </table>
+
+</body>
         </section>
 
         <section id="about" class="container">
@@ -245,6 +335,7 @@
 
 </body>
 </html>
+
 
 
 
